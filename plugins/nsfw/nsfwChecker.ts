@@ -10,7 +10,8 @@ import * as wash from 'washyourmouthoutwithsoap';
 export const handler: PluginHandler = async (
   context: PluginContext,
   parameters: PluginParameters,
-  eventType: HookEventType
+  eventType: HookEventType,
+  options: any
 ) => {
   const responseText = getText(context.response, eventType);
   const containsNsfw = wash.check('en', responseText);
