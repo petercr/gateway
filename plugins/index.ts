@@ -15,21 +15,7 @@ import { handler as portkeymoderateContent } from './portkey/moderateContent';
 import { handler as portkeylanguage } from './portkey/language';
 import { handler as portkeypii } from './portkey/pii';
 import { handler as portkeygibberish } from './portkey/gibberish';
-import { handler as aporiavalidateProject } from './aporia/validateProject';
-import { handler as sydelabssydeguard } from './sydelabs/sydeguard';
-import { handler as pillarscanPrompt } from './pillar/scanPrompt';
-import { handler as pillarscanResponse } from './pillar/scanResponse';
-import { handler as patronusphi } from './patronus/phi';
-import { handler as patronuspii } from './patronus/pii';
-import { handler as patronusisConcise } from './patronus/isConcise';
-import { handler as patronusisHelpful } from './patronus/isHelpful';
-import { handler as patronusisPolite } from './patronus/isPolite';
-import { handler as patronusnoApologies } from './patronus/noApologies';
-import { handler as patronusnoGenderBias } from './patronus/noGenderBias';
-import { handler as patronusnoRacialBias } from './patronus/noRacialBias';
-import { handler as patronusretrievalAnswerRelevance } from './patronus/retrievalAnswerRelevance';
-import { handler as patronustoxicity } from './patronus/toxicity';
-import { handler as patronuscustom } from './patronus/custom';
+import { handler as nsfwCheckernsfwChecker } from './nsfw/nsfwChecker';
 
 export const plugins = {
   default: {
@@ -53,27 +39,7 @@ export const plugins = {
     pii: portkeypii,
     gibberish: portkeygibberish,
   },
-  aporia: {
-    validateProject: aporiavalidateProject,
-  },
-  sydelabs: {
-    sydeguard: sydelabssydeguard,
-  },
-  pillar: {
-    scanPrompt: pillarscanPrompt,
-    scanResponse: pillarscanResponse,
-  },
-  patronus: {
-    phi: patronusphi,
-    pii: patronuspii,
-    isConcise: patronusisConcise,
-    isHelpful: patronusisHelpful,
-    isPolite: patronusisPolite,
-    noApologies: patronusnoApologies,
-    noGenderBias: patronusnoGenderBias,
-    noRacialBias: patronusnoRacialBias,
-    retrievalAnswerRelevance: patronusretrievalAnswerRelevance,
-    toxicity: patronustoxicity,
-    custom: patronuscustom,
+  nsfw: {
+    nsfwChecker: nsfwCheckernsfwChecker,
   },
 };
