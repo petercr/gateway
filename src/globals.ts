@@ -13,6 +13,7 @@ export const HEADER_KEYS: Record<string, string> = {
   CUSTOM_HOST: `x-${POWERED_BY}-custom-host`,
   REQUEST_TIMEOUT: `x-${POWERED_BY}-request-timeout`,
   STRICT_OPEN_AI_COMPLIANCE: `x-${POWERED_BY}-strict-open-ai-compliance`,
+  CONTENT_TYPE: `Content-Type`,
 };
 
 export const RESPONSE_HEADER_KEYS: Record<string, string> = {
@@ -72,6 +73,7 @@ export const SAMBANOVA: string = 'sambanova';
 export const LEMONFOX_AI: string = 'lemonfox-ai';
 export const UPSTAGE: string = 'upstage';
 export const LAMBDA: string = 'lambda';
+export const DASHSCOPE: string = 'dashscope';
 
 export const VALID_PROVIDERS = [
   ANTHROPIC,
@@ -118,6 +120,7 @@ export const VALID_PROVIDERS = [
   LEMONFOX_AI,
   UPSTAGE,
   LAMBDA,
+  DASHSCOPE,
 ];
 
 export const CONTENT_TYPES = {
