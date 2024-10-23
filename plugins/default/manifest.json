@@ -464,6 +464,20 @@
       }
     },
     {
+      "name": "NSFW Checker",
+      "id": "nsfwChecker",
+      "type": "guardrail",
+      "supportedHooks": ["afterRequestHook"],
+      "description": [
+        {
+          "type": "subHeading",
+          "text": "Checks if the content contains NSFW words."
+        }
+      ],
+      "parameters": {
+        "type": "object",
+        "properties": {}
+      },
       "name": "Lowercase check",
       "id": "alllowercase",
       "type": "guardrail",

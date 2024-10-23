@@ -1,0 +1,18 @@
+{
+  "name": "nsfw",
+  "id": "nsfwChecker",
+  "functions": [
+    {
+      "name": "nsfw",
+      "id": "nsfwChecker",
+      "supportedHooks": ["afterRequestHook"],
+      "type": "guardrail",
+      "description": [
+        {
+          "type": "subHeading",
+          "text": "Checks the response for NSFW content."
+        }
+      ]
+    }
+  ]
+}
